@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OWL tabs</string>
+    <string name="fixtures">Fixtures</string>
+    <string name="results">Results</string>
+    <string name="venue_date_format">%1$s | %2$s</string>
+    <string name="venue_date_format_postponed"><![CDATA[%1$s | <font color="#ff0000">%2$s</font>]]></string>
+    <string name="postponed">Postponed</string>
+    <string name="select">Select a competition</string>
+    <string name="all">All</string>
+</resources>

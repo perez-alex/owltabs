@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/section_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/activity_default_margin"
+    android:paddingTop="@dimen/activity_title_margin"
+    android:paddingEnd="@dimen/activity_default_margin"
+    android:paddingBottom="@dimen/activity_title_margin"
+    android:textColor="@color/navyBlue"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    tools:text="September 2017" />

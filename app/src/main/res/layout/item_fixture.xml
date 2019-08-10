@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/fixture_padding">
+
+    <TextView
+        android:id="@+id/competition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_default_margin"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Champions League" />
+
+    <TextView
+        android:id="@+id/venue_and_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/competition"
+        app:layout_constraintTop_toBottomOf="@id/competition"
+        tools:text="Etihad Stadium | Sep 12, 2017 at 20:00" />
+
+    <TextView
+        android:id="@+id/home_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_default_margin"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/navyBlue"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/competition"
+        app:layout_constraintTop_toBottomOf="@id/venue_and_date"
+        tools:text="Chelsea FC" />
+
+    <TextView
+        android:id="@+id/away_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_default_margin"
+        android:layout_marginBottom="@dimen/activity_default_margin"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/navyBlue"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/competition"
+        app:layout_constraintTop_toBottomOf="@id/home_team"
+        tools:text="Qarabag" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/date_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="45dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_default_margin"
+        android:textColor="@color/navyBlue"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@id/day_of_the_week"
+        app:layout_constraintEnd_toEndOf="@id/date_guideline"
+        app:layout_constraintStart_toStartOf="@id/date_guideline"
+        tools:text="12" />
+
+    <TextView
+        android:id="@+id/day_of_the_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_default_margin"
+        android:layout_marginBottom="@dimen/activity_default_margin"
+        android:textAllCaps="true"
+        android:textColor="@color/navyBlue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/date_guideline"
+        app:layout_constraintStart_toStartOf="@id/date_guideline"
+        tools:text="TUE" />
+
+    <View
+        android:id="@+id/date_divider"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/activity_default_margin"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/day_of_the_week"
+        app:layout_constraintEnd_toStartOf="@id/day_of_the_week"
+        app:layout_constraintTop_toTopOf="@id/date" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/postponed_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_default_margin"
+        android:background="@android:color/holo_red_dark"
+        android:padding="3dp"
+        android:text="@string/postponed"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/home_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/navyBlue"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/home_team"
+        app:layout_constraintEnd_toEndOf="@id/date_guideline"
+        app:layout_constraintStart_toStartOf="@id/date_guideline"
+        app:layout_constraintTop_toTopOf="@id/home_team"
+        tools:text="2" />
+
+    <TextView
+        android:id="@+id/away_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/away_team"
+        app:layout_constraintEnd_toEndOf="@id/date_guideline"
+        app:layout_constraintStart_toStartOf="@id/date_guideline"
+        app:layout_constraintTop_toTopOf="@id/away_team"
+        tools:text="4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

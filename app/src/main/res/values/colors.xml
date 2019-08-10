@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/bone</color>
+    <color name="colorPrimaryDark">@color/darkBone</color>
+    <color name="colorAccent">@color/navyBlue</color>
+    <color name="navyBlue">#000080</color>
+    <color name="bone">#e3dac9</color>
+    <color name="darkBone">#c9b797</color>
+</resources>
